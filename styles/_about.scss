@@ -1,0 +1,17 @@
+.about {
+  background-color: $background;
+
+  padding: 7.2rem 0 13.3rem;
+
+  &__container {
+  }
+  &__title {
+    color: $black;
+    font-size: 4.6rem;
+    font-weight: 900;
+
+    margin: 0 0 10rem;
+
+    text-align: center;
+  }
+}
