@@ -4,6 +4,9 @@
   padding: 7.2rem 0 13.3rem;
 
   &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__title {
     color: $black;
@@ -13,5 +16,94 @@
     margin: 0 0 10rem;
 
     text-align: center;
+  }
+  &__tabbutton {
+    padding: 1rem 2rem;
+    margin: 0 3.5rem;
+
+    color: $gray;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    font-weight: 500;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+
+    cursor: pointer;
+
+    &--active {
+      cursor: initial;
+
+      color: $blue;
+
+      border-bottom-color: $blue;
+    }
+
+    &-holder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__tab {
+    display: none;
+    &--active {
+      display: block;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin: 0 0 7rem;
+
+      &:nth-of-type(even) {
+        flex-direction: row-reverse;
+      }
+
+      .item {
+        &__text-container {
+          width: 50%;
+        }
+        &__figure-container {
+          width: 50%;
+        }
+        &__title {
+          color: $black;
+          font-size: 3.8rem;
+          font-weight: 900;
+
+          margin: 0 0 5rem;
+        }
+        &__descr {
+          color: $gray;
+          font-size: 2.2rem;
+          font-weight: 400;
+        }
+      }
+    }
+    &-holder {
+      padding: 15rem 0 0;
+    }
+  }
+  &__subtitle {
+    color: $black;
+    font-size: 3.8rem;
+    font-weight: 900;
+
+    margin: 0 0 3.2rem;
+  }
+  &__button {
+    color: $white;
+    background-color: $blue;
+
+    font-size: 1.9rem;
+
+    border: 1px solid $blue;
+    padding: 1.2rem 2.1rem;
+    border-radius: 0.5rem;
+
+    box-shadow: 0px 5px 10px #0000001c;
   }
 }
