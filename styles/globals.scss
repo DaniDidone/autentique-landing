@@ -34,6 +34,7 @@ $blue-light: #88d2ff;
 $blue-dark: #1253c6;
 $white: #ffffff;
 $gray: #8b97ae;
+$gray-alternative: #b9c1cc;
 $gray-light: #f1f4f8;
 
 $border: #e6eaee;
@@ -41,3 +42,4 @@ $border: #e6eaee;
 @import "./header";
 @import "./hero";
 @import "./about";
+@import "./testimonial";
